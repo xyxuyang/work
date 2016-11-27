@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>shopping list</title>
+</head>
+<body>
+	<h1>what to buy</h1>
+	<p title="a gentle reminder">don't forget to buy this stuff.</p>
+	<p>this is just a test</p>
+	<ul id="purchases">
+		<li>a thin of beans</li>
+		<li class="sale">cheese</li>
+		<li class="sale important">milk</li>
+	</ul>
+	<script type="text/javascript">
+		// var shopping=document.getElementById("purchases");
+		// var items=shopping.getElementsByTagName("*");
+		// alert(items.length);
+		// document.getElementsByClassName("sale");
+		// alert(document.getElementsByClassName("sale").length);
+	 	// alert(document.getElementsByClassName("sale important").length);
+	 	// var paras=document.getElementsByTagName("p");
+	 	// for(var i=0; i<paras.length;i++){
+	 	// 	var title_text=paras[i].getAttribute("title");
+	 	// 	if(title_text) alert(title_text);		
+	 	// }
+	 	// var shopping=document.getElementById("purchases");
+	 	// alert(shopping.getAttribute("title"));
+	 	// shopping.setAttribute("title","a list of goods");
+	 	// alert(shopping.getAttribute("title"));
+	 	var paras=document.getElementsByTagName("p");
+	 	for(var i=0; i<paras.length; i++){
+	 		var title_text=paras[i].getAttribute("title");
+	 		if(title_text!=null){
+	 			paras[i].setAttribute("title","brand new title text");
+	 			alert(paras[i].getAttribute("title"));
+
+	 		}
+	 	}
+
+	</script>
+</body>
+</html>

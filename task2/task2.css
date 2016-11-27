@@ -1,33 +1,63 @@
 body{
-	padding: 0;
-	margin: 0;
+    margin: 0;
+    background-color: #ccc;
 }
-#header{
-	width: 100%;
-	height: 80px;
-	background-color: #333;
+.main{
+    background-color: #fff;
+    margin: 10px;
+    border: 1px solid gray;
+    padding: 10px;
+
 }
-img{
-	width: 80px;
-	height: 80px;
+/**/
+.header{
+    background-color: #333;
 }
-ul{
-	float: right;
-	margin: 0;
+.header ul{
+    float: right;
+    margin: 0;
 }
-#header ul li{
-	height: 80px;
-	line-height: 80px;
-	float:left;
-    margin-right: 32px;
-    list-style: none;
+.header li{
+    margin-right: 30px;
+    line-height: 80px;;
+    float: left;
+}
+.header img{
+    width: 80px;
+    height: 80px;
+    vertical-align: top; 
+    /*图片下面有空隙*/
+}
+.header a{
+    color: #fff;
+    text-decoration: none;
+}
+.header a:hover{
+    color: #ccc;
+}
+.photos1{
+    width: 300px;
+    margin: 30px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+.photos1 span{
+    display: block;
+}
+.photos img{
+    margin: 20px auto;
 }
 
-a{
-	color: #fff;
-	text-decoration: none
+/**/
+.footer{
+    height: 25px;
+    padding: 25px;
+    text-align: center;
+    background-color: #000;
 }
+.footer span{
+    display: inline-block; 
+    color: white;
 
-a:hover{
-	color: #ccc;
-}
+   }
